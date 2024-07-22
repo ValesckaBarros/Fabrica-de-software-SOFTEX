@@ -1,15 +1,24 @@
 from abc import ABC, abstractmethod
 
 class Dispositivo(ABC):
-    """
-    Classe abstrata que define a interface comum para todos os dispositivos.
-    Utiliza a biblioteca `abc` para implementar uma classe base abstrata.
-    """
-
     def __init__(self):
         """
-        Inicializa o dispositivo.
+        Inicializa a classe base Dispositivo.
         """
-        self.machine = None
-        # Atributo `machine` pode ser utilizado para associar uma máquina de estados (
+        self.machine = None  # Atributo para a máquina de estados, será definido nas subclasses
 
+    @abstractmethod
+    def status(self):
+        """
+        Método abstrato para obter o status do dispositivo.
+        Deve ser implementado por subclasses.
+        """
+        pass
+
+    @abstractmethod
+    def notificar(self):
+        """
+        Método abstrato para notificar o status do dispositivo.
+        Deve ser implementado por subclasses.
+        """
+        pass
