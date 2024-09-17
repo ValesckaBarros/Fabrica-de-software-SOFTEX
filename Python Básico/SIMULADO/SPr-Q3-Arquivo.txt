@@ -1,0 +1,7 @@
+12345 1 0061000 Joao Francisco                     
+23456 2 0011000 Ana Maria                          
+34567 2 0051000 Ana Joana                          
+45678 1 0021000 Jose Francisco                     
+56789 1 0031000 Joao Pedro                         
+61234 1 0071000 Jose Francisco                     
+72345 2 0041000 Ana Valeria                        

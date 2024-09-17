@@ -1,0 +1,12 @@
+010 Engenheiro Civil          Exatas    
+020 Engenheiro Eletrico       Exatas    
+030 Engenheiro Mecanico       Exatas    
+040 Advogado                  Humanas   
+050 Analista de sistemas      Exatas    
+060 Professor Universitario   Exatas    
+070 Medico                    Saude     
+080 Enfermeiro                Saude     
+090 Dentista                  Saude     
+100 Oftalmologista            Saude     
+110 Engenheiro de Minas       Exatas    
+120 Economista                Humanas   
