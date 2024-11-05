@@ -9,14 +9,17 @@ img = cv2.imread('Tools.bmp', cv2.IMREAD_GRAYSCALE)
 img_blur = cv2.GaussianBlur(img, (5, 5), 0)
 
 # Aplicar limiar adaptativo para binarizar a imagem
+# QUAL ALGORITIMO???????
 thresh = cv2.adaptiveThreshold(img_blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
                                cv2.THRESH_BINARY_INV, 11, 2)
 
 # Aplicar fechamento morfológico para conectar regiões próximas
+#EROSAO E DILATAÇÃO
 kernel = np.ones((5, 5), np.uint8)
 morph = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
 # Detectar contornos
+# 
 contours, _ = cv2.findContours(morph, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
 # Filtrar contornos por área mínima
